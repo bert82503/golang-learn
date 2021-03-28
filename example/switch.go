@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// Switch statements express conditionals across many branches.
 func main() {
 	i := 2
 	fmt.Print("Write ", i, " as ")
@@ -17,15 +18,17 @@ func main() {
 	case 3:
 		fmt.Println("three")
 	}
+	// Write 2 as two
 
 	// use commas to separate multiple expressions in the same case statement
-	// 非周末运行
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
 	default:
 		fmt.Println("It's a weekday")
 	}
+	// It's a weekday
+	// 非周末运行
 
 	// express if/else logic
 	t := time.Now()
@@ -35,6 +38,7 @@ func main() {
 	default:
 		fmt.Println("It's after noon")
 	}
+	// It's after noon
 
 	// A type switch compares types instead of values.
 	// use this to discover the type of an interface value.
@@ -49,6 +53,9 @@ func main() {
 		}
 	}
 	whatAmI(true)
+	// I'm a bool
 	whatAmI(1)
+	// I'm an int
 	whatAmI("hey")
+	// Don't know type string
 }

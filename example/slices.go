@@ -2,11 +2,14 @@ package main
 
 import "fmt"
 
-// Slices are a key data type in Go, giving a more powerful interface to sequences than arrays.
+// Slices are a key data type, giving a more powerful interface to sequences than arrays.
+// more details on the design and implementation of slices in Go.
+// Go slices usage and internals, https://blog.golang.org/2011/01/go-slices-usage-and-internals.html
 func main() {
 	s := make([]string, 3)
 	fmt.Println("emp:", s)
 	// emp: [  ]
+	// 与数组不同
 
 	s[0] = "a"
 	s[1] = "b"
@@ -23,12 +26,14 @@ func main() {
 	s = append(s, "e", "f")
 	fmt.Println("apd:", s)
 	// apd: [a b c d e f]
+	// 追加操作，动态扩容
 
 	c := make([]string, len(s))
 	copy(c, s)
 	fmt.Println("cpy:", c)
 	// cpy: [a b c d e f]
 
+	// 子列表
 	l := s[2:5]
 	fmt.Println("sl1:", l)
 	// sl1: [c d e]
@@ -55,4 +60,5 @@ func main() {
 	}
 	fmt.Println("2d: ", twoD)
 	// 2d:  [[0] [1 2] [2 3 4]]
+	// 二维数组长度允许不相同
 }
