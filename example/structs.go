@@ -50,6 +50,7 @@ func main() {
 	// 50
 
 	// Structs are mutable.
+	// 结构体是可变的。
 	sp.age = 51
 	fmt.Println(sp.age)
 	// 51
