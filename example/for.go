@@ -2,7 +2,19 @@ package main
 
 import "fmt"
 
-// for is Go’s only looping construct.
+/*
+for is Go’s only looping construct. Here are some basic types of for loops.
+
+The most basic type, with a single condition.
+
+A classic initial/condition/after for loop.
+
+for without a condition will loop repeatedly until you break out of the loop or return from the enclosing function.
+
+You can also continue to the next iteration of the loop.
+
+We’ll see some other for forms later when we look at range statements, channels, and other data structures.
+*/
 func main() {
 	i := 1
 	for i <= 3 {
