@@ -2,7 +2,15 @@ package main
 
 import "fmt"
 
-// Go has various value types including strings, integers, floats, booleans, etc.
+/*
+Go has various value types including strings, integers, floats, booleans, etc. Here are a few basic examples.
+
+Strings, which can be added together with +.
+
+Integers and floats.
+
+Booleans, with boolean operators as you’d expect.
+*/
 func main() {
 	fmt.Println("go" + "lang")
 	// golang
