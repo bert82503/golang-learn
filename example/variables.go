@@ -14,7 +14,8 @@ Go will infer the type of initialized variables.
 Variables declared without a corresponding initialization are zero-valued.
 For example, the zero value for an int is 0.
 
-The := syntax is shorthand for declaring and initializing a variable, e.g. for var f string = "apple" in this case.
+The := syntax is shorthand for declaring and initializing a variable,
+e.g. for var f string = "apple" in this case.
 */
 func main() {
 	var a = "initial"
