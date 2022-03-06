@@ -11,6 +11,7 @@ The language and the standard library treat strings specially - as containers of
 In other languages, strings are made of “characters”.
 In Go, the concept of a character is called a rune - it’s an integer that represents a Unicode code point.
 This Go blog post is a good introduction to the topic. (https://go.dev/blog/strings)
+(字符串是一个只读的字节切片)
 
 s is a string assigned a literal value representing the word “hello” in the Thai language.
 Go string literals are UTF-8 encoded text.
