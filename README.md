@@ -18,5 +18,7 @@ Build fast, reliable, and efficient software at scale
 2. The Go Programming Language
    * https://golang.org/
    * https://golang.google.cn/
-3. [Documentation - The Go Programming Language](https://golang.org/doc/)
+3. Documentation - The Go Programming Language
+   * https://golang.org/doc/
+   * https://golang.google.cn/doc/
 
