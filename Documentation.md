@@ -20,14 +20,14 @@ Go可以快速编译为机器代码，同时还具有垃圾收集的便利性和
 
 
 # Getting started 新手入门
-## [Installing Go](https://golang.google.cn/doc/install)
+## Installing Go
 Instructions for downloading and installing Go.
 
-## [Tutorial: Getting started](https://golang.google.cn/doc/tutorial/getting-started)
+## Tutorial: Getting started
 A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, packages, and modules.
 一个简短的"你好，世界"教程开始。了解一些关于 Go 代码、工具、包和模块的信息。
 
-## [Tutorial: Create a module](https://golang.google.cn/doc/tutorial/create-module)
+## Tutorial: Create a module
 A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
 介绍函数、错误处理、数组、映射、单元测试和编译的简短主题教程。
 
