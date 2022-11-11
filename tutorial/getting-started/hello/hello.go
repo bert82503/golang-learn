@@ -1,4 +1,4 @@
-// 程序启动入口
+// 应用程序启动入口
 package main
 
 import (
