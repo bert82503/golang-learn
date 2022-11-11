@@ -1,3 +1,3 @@
-module tutorial/create-module/greetings
+module tutorial/greetings
 
 go 1.19
