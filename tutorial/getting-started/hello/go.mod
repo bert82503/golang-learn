@@ -1,4 +1,4 @@
-module tutorial/getting-started/hello
+module tutorial.com/getting-started/hello
 
 go 1.19
 
