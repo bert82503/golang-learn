@@ -18,7 +18,7 @@ import (
 
 // 3. Return and handle an error
 // https://golang.google.cn/doc/tutorial/handle-errors
-// 2. In your hello/hello.go file, handle the error now returned by the Hello function,
+// 3.2. In your hello/hello.go file, handle the error now returned by the Hello function,
 // along with the non-error value.
 
 func main() {

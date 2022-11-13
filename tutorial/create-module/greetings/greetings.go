@@ -23,7 +23,7 @@ import (
 
 // 3. Return and handle an error
 // https://golang.google.cn/doc/tutorial/handle-errors
-// 1. In greetings/greetings.go, add the code highlighted below.
+// 3.1. In greetings/greetings.go, add the code highlighted below.
 
 func Hello(name string) (string, error) {
 	// If no name was given, return an error with a message.
