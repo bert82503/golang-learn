@@ -4,13 +4,39 @@ package main
 import (
 	"fmt"
 	"github.com/bert82503/golang-learn/tutorial/create-module/greetings"
+	"log"
 )
 
 // Call your code from another module
 // https://golang.google.cn/doc/tutorial/call-module-code
 
+//func main() {
+//	// Get a greeting message and print it.
+//	message := greetings.Hello("Gladys")
+//	fmt.Println(message)
+//}
+
+// Return and handle an error
+// https://golang.google.cn/doc/tutorial/handle-errors
+// 2. In your hello/hello.go file, handle the error now returned by the Hello function,
+// along with the non-error value.
+
 func main() {
-	// Get a greeting message and print it.
-	message := greetings.Hello("Gladys")
+	// Set properties of the predefined Logger, including
+	// the log entry prefix and a flag to disable printing
+	// the time, source file, and line number.
+	log.SetPrefix("greetings: ")
+	log.SetFlags(0)
+
+	// Request a greeting message.
+	message, err := greetings.Hello("")
+	// If an error was returned, print it to the console and
+	// exit the program.
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// If no error was returned, print the returned message
+	// to the console.
 	fmt.Println(message)
 }
