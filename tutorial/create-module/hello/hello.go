@@ -7,7 +7,7 @@ import (
 	"log"
 )
 
-// Call your code from another module
+// 2. Call your code from another module
 // https://golang.google.cn/doc/tutorial/call-module-code
 
 //func main() {
@@ -16,7 +16,7 @@ import (
 //	fmt.Println(message)
 //}
 
-// Return and handle an error
+// 3. Return and handle an error
 // https://golang.google.cn/doc/tutorial/handle-errors
 // 2. In your hello/hello.go file, handle the error now returned by the Hello function,
 // along with the non-error value.

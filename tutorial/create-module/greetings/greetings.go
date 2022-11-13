@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// Create a module
+// 1. Create a module
 // Tutorial: Create a Go module
 // https://golang.google.cn/doc/tutorial/create-module
 
@@ -21,7 +21,7 @@ import (
 //	return message
 //}
 
-// Return and handle an error
+// 3. Return and handle an error
 // https://golang.google.cn/doc/tutorial/handle-errors
 // 1. In greetings/greetings.go, add the code highlighted below.
 

@@ -6,7 +6,7 @@ import (
 	"github.com/bert82503/golang-learn/tutorial/create-module/greetings"
 )
 
-// Call your code from another module
+// 2. Call your code from another module
 // https://golang.google.cn/doc/tutorial/call-module-code
 
 func main() {
