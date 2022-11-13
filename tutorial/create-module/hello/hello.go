@@ -2,9 +2,9 @@
 package main
 
 import (
-	"fmt"
-	"github.com/bert82503/golang-learn/tutorial/create-module/greetings"
-	"log"
+    "fmt"
+    "github.com/bert82503/golang-learn/tutorial/create-module/greetings"
+    "log"
 )
 
 // 2. Call your code from another module
@@ -22,21 +22,27 @@ import (
 // along with the non-error value.
 
 func main() {
-	// Set properties of the predefined Logger, including
-	// the log entry prefix and a flag to disable printing
-	// the time, source file, and line number.
-	log.SetPrefix("greetings: ")
-	log.SetFlags(0)
+    // Set properties of the predefined Logger, including
+    // the log entry prefix and a flag to disable printing
+    // the time, source file, and line number.
+    log.SetPrefix("greetings: ")
+    log.SetFlags(0)
 
-	// Request a greeting message.
-	message, err := greetings.Hello("")
-	// If an error was returned, print it to the console and
-	// exit the program.
-	if err != nil {
-		log.Fatal(err)
-	}
+    // Request a greeting message.
+    //message, err := greetings.Hello("")
 
-	// If no error was returned, print the returned message
-	// to the console.
-	fmt.Println(message)
+    // 4. Return a random greeting
+    // https://golang.google.cn/doc/tutorial/random-greeting
+    // You're just adding Gladys's name (or a different name, if you like)
+    // as an argument to the Hello function call in hello.go.
+    message, err := greetings.Hello("Gladys")
+    // If an error was returned, print it to the console and
+    // exit the program.
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    // If no error was returned, print the returned message
+    // to the console.
+    fmt.Println(message)
 }
