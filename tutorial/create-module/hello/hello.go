@@ -21,6 +21,35 @@ import (
 // 3.2. In your hello/hello.go file, handle the error now returned by the Hello function,
 // along with the non-error value.
 
+//func main() {
+//	// Set properties of the predefined Logger, including
+//	// the log entry prefix and a flag to disable printing
+//	// the time, source file, and line number.
+//	log.SetPrefix("greetings: ")
+//	log.SetFlags(0)
+//
+//	// Request a greeting message.
+//	// 3. Return and handle an error
+//	//message, err := greetings.Hello("")
+//	// 4. Return a random greeting
+//	// https://golang.google.cn/doc/tutorial/random-greeting
+//	// You're just adding Gladys's name (or a different name, if you like)
+//	// as an argument to the Hello function call in hello.go.
+//	message, err := greetings.Hello("Gladys")
+//	// If an error was returned, print it to the console and
+//	// exit the program.
+//	if err != nil {
+//		log.Fatal(err)
+//	}
+//
+//	// If no error was returned, print the returned message
+//	// to the console.
+//	fmt.Println(message)
+//}
+
+// 5. Return greetings for multiple people
+// https://golang.google.cn/doc/tutorial/greetings-multiple-people
+
 func main() {
 	// Set properties of the predefined Logger, including
 	// the log entry prefix and a flag to disable printing
@@ -28,21 +57,15 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	// Request a greeting message.
-	// 3. Return and handle an error
-	//message, err := greetings.Hello("")
-	// 4. Return a random greeting
-	// https://golang.google.cn/doc/tutorial/random-greeting
-	// You're just adding Gladys's name (or a different name, if you like)
-	// as an argument to the Hello function call in hello.go.
-	message, err := greetings.Hello("Gladys")
-	// If an error was returned, print it to the console and
-	// exit the program.
+	// A slice of names.
+	names := []string{"Gladys", "Samantha", "Darrin"}
+	
+	// Request greeting messages for the names.
+	messages, err := greetings.Hellos(names)
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	// If no error was returned, print the returned message
-	// to the console.
-	fmt.Println(message)
+	// If no error was returned, print the returned map of
+	// messages to the console.
+	fmt.Println(messages)
 }
