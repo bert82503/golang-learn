@@ -31,3 +31,19 @@ A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, 
 A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
 介绍函数、错误处理、数组、映射、单元测试和编译的简短主题教程。
 
+## A Tour of Go 之旅
+An interactive introduction to Go in three sections. 
+The first section covers basic syntax and data structures; the second discusses methods and interfaces; 
+and the third introduces Go's concurrency primitives. 
+Each section concludes with a few exercises, so you can practice what you've learned. 
+You can take the tour online or install it locally with:
+分三个部分对Go进行交互式介绍。
+第一部分介绍基本语法和数据结构，第二部分讨论方法和接口，第三部分介绍Go的并发原语。
+每个部分都以一些练习结束，这样您就可以练习所学的内容。
+您可以通过以下方式在线或在本地安装教程：
+```
+$ go install golang.org/x/website/tour@latest
+```
+This will place the tour binary in your GOPATH's bin directory.
+这将把旅行二进制文件放在GOPATH的bin目录中。
+
