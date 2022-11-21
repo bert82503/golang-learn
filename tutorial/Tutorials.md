@@ -25,3 +25,7 @@ This tutorial's sequence includes seven brief topics that each illustrate a diff
 6. Add a test -- Use Go's built-in unit testing features to test your code.
 7. Compile and install the application -- Compile and install your code locally.
 
+## A Tour of Go 指南
+An interactive introduction to Go: basic syntax and data structures; methods and interfaces; and Go's concurrency primitives.
+Go的交互式介绍：基本语法和数据结构，方法和接口，和Go的并发原语。
+

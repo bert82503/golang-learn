@@ -31,7 +31,7 @@ A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, 
 A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
 介绍函数、错误处理、数组、映射、单元测试和编译的简短主题教程。
 
-## A Tour of Go 之旅
+## A Tour of Go 指南
 An interactive introduction to Go in three sections. 
 The first section covers basic syntax and data structures; the second discusses methods and interfaces; 
 and the third introduces Go's concurrency primitives. 
