@@ -1,11 +1,14 @@
 package main
 
 import (
-  "fmt"
-  "math/rand"
+	"fmt"
+	"math/rand"
+	"time"
 )
 
-func main()  {
-  rand.Seed(23)
-  fmt.Println("我最喜欢的数字是", rand.Intn(100))
+func main() {
+	// To see a different number, seed the number generator; see `rand.Seed`.
+	rand.Seed(time.Now().UnixMilli())
+
+	fmt.Println("My favorite number is", rand.Intn(10))
 }
