@@ -7,5 +7,6 @@ func add2(x, y int) int {
 }
 
 func main() {
+	// 55
 	fmt.Println(add2(42, 13))
 }
