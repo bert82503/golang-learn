@@ -9,5 +9,6 @@ func split(sum int) (x, y int) {
 }
 
 func main() {
+	// 7 10
 	fmt.Println(split(17))
 }
